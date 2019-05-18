@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DELUXE CARS</title>
+</head>
+<body>
+ <center>
+     <h1>Lista de Carros</h1>
+        <table border="1" bgcolor="white">
+        <tr>
+            <th>Nome</th>
+            <th>Quilometragem</th>
+            <th>Combustível</th>
+            <th>Cor</th>
+            <th>Câmbio</th>
+            <th>Ano</th>
+        </tr>
+        {% for pro in carros %}
+            <tr>
+                <td><a href="/listaatividades/{{pro[0]}}">{{pro[1]}}</a></td>
+                <td>{{pro[2]}}</td>
+                <td>{{pro[3]}}</td>
+                <td>{{pro[4]}}</td>
+                <td>{{pro[5]}}</td>
+                <td>{{pro[6]}}</td>
+            </tr>
+        {% endfor %}
+
+    </table>
+    </center>
+
+</body>
+</html>
